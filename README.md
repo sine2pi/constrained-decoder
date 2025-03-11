@@ -14,7 +14,7 @@ from difflib import SequenceMatcher
 
 class ConstrainedWhisperDecoder:
     """
-    A decoder that constrains Whisper's predictions to match words from a reference text
+    A decoder that constrains an asr model (in this example Whispers) predictions to match words from a reference text
     using word-level timestamps for alignment.
     """
     
