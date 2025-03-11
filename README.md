@@ -2,7 +2,7 @@
 
 
 A decoder that constrains an asr model (in this example Whispers) predictions to match words from a reference text
-using word-level timestamps for alignment so as to reduce errors in my on-the-fly any-seguence-length all-you-can-eat feature extractor 
+using word-level timestamps for alignment so as to reduce errors in my on-the-fly any-seguence-length all-you-can-eat feature extractor. If we truncate the audio sample sequence length we need to also remove the correct words from the transcript. A way to do this is to have your feature extractor create a new dataset on the fly from your existing one by identifying what words need to be removed and then remove them. Small asr models are error prone so you prime the mini model first (you already have the transcript if you are using a feature extractor). This is more about data processing than model architecture.
 
 ``` python
 
