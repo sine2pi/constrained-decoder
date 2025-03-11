@@ -1,5 +1,5 @@
 ## constrained-decoder
-### Experiments with asr models
+
 
 A decoder that constrains an asr model (in this example Whispers) predictions to match words from a reference text
 using word-level timestamps for alignment.
