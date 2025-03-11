@@ -2,7 +2,7 @@
 
 
 A decoder that constrains an asr model (in this example Whispers) predictions to match words from a reference text
-using word-level timestamps for alignment.
+using word-level timestamps for alignment so as to reduce errors in my any-seguence-length feature extractor 
 
 ``` python
 
